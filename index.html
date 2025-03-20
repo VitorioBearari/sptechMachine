@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Machine de Conversão</title>
+</head>
+<body>
+    <div class="div_pai">
+
+        <div class="div_table">
+            
+            <h1 class="textoPadrao">SPTecher's Machine</h1>
+            <p class="textoPadrao">Insira um número decimal:</p> 
+            <div class ="div_butao">
+                <input type="number" id="ipt_decimal" placeholder="Ex: 42">
+                <button onclick="converter()">Converter</button>
+            </div>
+            <h3 class="textoPadrao">Resultados:</h3>
+            <div id="div_resultados">
+
+                <div id="div_octal" class="div_resultados">Octal: </div> <br>
+                <div id="div_hexa" class="div_resultados">Hexadecimal: </div> <br>
+                <div id="div_binario" class="div_resultados">Binário: </div> <br>
+            </div>
+                
+        </div>
+
+    </div>
+    </body>
+    <script src="index.js"></script>
+<!-- <script>
+    function converter(){
+        var decimal = Number(ipt_decimal.value)
+
+        div_octal.innerHTML = "Octal: "
+        div_octal.innerHTML += decimal.toString(8)
+
+        div_hexa.innerHTML = "Hexadecimal: "
+        div_hexa.innerHTML += decimal.toString(16)
+
+        div_binario.innerHTML = "Binário: "
+        div_binario.innerHTML += decimal.toString(2)
+        print("12")
+        
+}
+</script> -->
+</html>
